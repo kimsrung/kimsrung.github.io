@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function termConditionCheckBox() {
+        let disable = document.getElementById('checkbox').checked;
+        if (disable) {
+          document.getElementById('btnSubmit').removeAttribute('disabled');
+        } else {
+          document
+            .getElementById('btnSubmit')
+            .setAttribute('disabled', 'disabled');
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div align="center">
+      <form>
+        <input
+          type="checkbox"
+          id="checkbox"
+          onclick="termConditionCheckBox()"
+        />
+        Term and Condition
+        <br /><br />
+        <input type="button" value="submit" disabled id="btnSubmit" />
+      </form>
+    </div>
+  </body>
+</html>

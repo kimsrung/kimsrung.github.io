@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function add() {
+        let number1 = document.getElementById('number1').value;
+        let number2 = document.getElementById('number2').value;
+        var sum = parseFloat(number1) + parseFloat(number2);
+        document.getElementById('result').value = sum;
+      }
+    </script>
+  </head>
+  <body>
+    <div align="center">
+      <form>
+        <input type="number" placeholder="Enter 1st No" id="number1" />
+        <br /><br />
+        <input type="number" placeholder="Enter 2nd No" id="number2" />
+        <br /><br />
+        <input type="number" placeholder="Result" id="result" />
+        <br /><br />
+        <input type="button" value="ADD" onclick="add()" />
+      </form>
+    </div>
+  </body>
+</html>
